@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/L-modules/static/css/main.7acaea2f.css",
+    "main.js": "/L-modules/static/js/main.07d3183d.js",
+    "index.html": "/L-modules/index.html",
+    "main.7acaea2f.css.map": "/L-modules/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/L-modules/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
