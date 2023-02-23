@@ -1,0 +1,26 @@
+.btn {
+  width: 110px;
+  //   display: inline-block;
+  padding: 10px 30px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: rgb(230, 229, 229);
+  border-radius: 7px;
+  text-decoration: none;
+  cursor: pointer;
+  color: deeppink;
+  text-transform: uppercase;
+  margin-left: 18px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  font-size: xx-small;
+}
+.btn:hover {
+  background-color: rgb(160, 159, 159);
+  text-transform: lowercase;
+}
+
+.btn.active {
+  background-color: deeppink;
+  color: white;
+}
