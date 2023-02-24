@@ -1,0 +1,40 @@
+.ColorPicker {
+  width: 600px;
+  padding: 10px;
+  border-radius: 17px;
+  margin: 20px auto 20px auto;
+  background-color: lightgrey;
+}
+
+.ColorPicker__title {
+  line-height: 1.3;
+}
+
+.ColorPicker__option {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  /* margin: 8px; */
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: transform 250ms linear;
+  padding: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ColorPicker__option--active {
+  transform: scale(1.4);
+  color: #ea03ff;
+}
+
+/* const colorPickerOptions = [
+  { label: 'red', color: '#ff2803' },
+  { label: 'green', color: '#10ec18' },
+  { label: 'aqua', color: '#04f7f7' },
+  { label: 'grey', color: '#607D8B' },
+  { label: 'pink', color: '#fd0357' },
+  { label: 'indigo', color: '#ea03ff' },
+]; */
