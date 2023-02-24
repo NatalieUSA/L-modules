@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styles from './button.module.scss';
 
 const Button = ({ children, onClick, type }) => {
-  console.log(children);
+  // console.log(children);
   return (
     <button onClick={onClick} className={styles.btn} type={type}>
       {children}
