@@ -1,8 +1,10 @@
 // https://docs.google.com/spreadsheets/d/1TsSvcYHR-sqIe_KjobYW3BEvfjRm8vYanCCdVCvff_I/edit?usp=sharing
 
 import './Counter.css';
+import Controls from './Controls';
+import Value from './Value';
 import React, { Component } from 'react';
-import Button from 'components/shared/components/Button/Button';
+
 //import buttonStyles from '../../shared/components/Button/button.module.scss';
 
 class Counter extends Component {
@@ -25,15 +27,20 @@ class Counter extends Component {
     return (
       <div className="Counter">
         <h3>Counter</h3>
-        <span className="Counter__value">{this.state.value}</span>
-        <div className="Counter__controls">
+        <Value value={this.state.value} />
+        {/* <span className="Counter__value">{this.state.value}</span> */}
+        <Controls
+          onIncrement={this.handleIncrement}
+          onDecrement={this.handleDecrement}
+        />
+        {/* <div className="Counter__controls">
           <Button type="button" onClick={this.handleIncrement}>
             увеличить на 1
           </Button>
           <Button type="button" onClick={this.handleDecrement}>
             уменьшить на 1
           </Button>
-        </div>
+        </div> */}
       </div>
     );
   }
