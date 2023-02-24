@@ -1,6 +1,6 @@
-//docs.google.com/spreadsheets/d/1TsSvcYHR-sqIe_KjobYW3BEvfjRm8vYanCCdVCvff_I/edit?usp=sharing
+// https://docs.google.com/spreadsheets/d/1TsSvcYHR-sqIe_KjobYW3BEvfjRm8vYanCCdVCvff_I/edit?usp=sharing
 
-https: import './Counter.css';
+import './Counter.css';
 import React, { Component } from 'react';
 import Button from 'components/shared/components/Button/Button';
 //import buttonStyles from '../../shared/components/Button/button.module.scss';
