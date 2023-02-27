@@ -5,13 +5,11 @@ import MyBooksForm from '../MyBooks-components-example/MyBooksForm/MyBooksForm';
 import MyBookList from '../MyBooks-components-example/MyBookList/MyBookList';
 import MyBooksFilter from '../MyBooks-components-example/MyBooksFilter/MyBooksFilter';
 
-import items from '../MyBooks-components-example/items';
-
 import styles from './my-books-3-1.module.scss';
 
 class MyBooksLife extends Component {
   state = {
-    items: [...items],
+    items: [],
     filter: '',
   };
 
