@@ -1,0 +1,42 @@
+.wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 30% 50%;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(2, 245, 245);
+}
+
+.block {
+  //   border: 1px solid;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: rgb(223, 224, 224);
+}
+
+.formGroup {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+
+  //   width: 50%;
+}
+
+// li {
+//   margin-top: auto;
+//   margin-bottom: auto;
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+ol {
+  margin-top: 50px;
+}
