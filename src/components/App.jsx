@@ -3,9 +3,11 @@ import Counter from './R-m2/Counter/Counter';
 import LessonsTitle from './shared/components/LessonsTitle/LessonsTitle';
 import Dropdown from './R-m2/Dropdown/Dropdown';
 import ColorPicker from './R-m2/ColorPicker/ColorPicker';
-import MyBooksLife from './modules/MyBooks-L-3-1/MyBooksLife';
+import MyBooksLifeСycle from './modules/MyBooks-L-3-1/MyBooksLife';
 
 import MyBooksComponent from './modules/MyBooks-components-example/MyBooksComponents';
+import { Posts } from './modules/Posts-L-3-2/Posts';
+
 const colorPickerOptions = [
   { label: 'red', color: '#ff2803' },
   { label: 'green', color: '#10ec18' },
@@ -18,8 +20,10 @@ const colorPickerOptions = [
 export const App = () => {
   return (
     <div className="App">
-      <LessonsTitle>Lyamzin. Modul 3.1 Жизненный цикл</LessonsTitle>
-      <MyBooksLife />
+      <LessonsTitle>Lyamzin.3.2. Posts</LessonsTitle>
+      <Posts />
+      <LessonsTitle>Lyamzin.3.1. Lifecycle</LessonsTitle>
+      <MyBooksLifeСycle />
       <LessonsTitle>Lyamzin. Modul 2.3 form</LessonsTitle>
       <MyBooks />
       <LessonsTitle> form-Component</LessonsTitle>

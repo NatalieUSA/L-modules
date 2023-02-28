@@ -7,11 +7,31 @@ import MyBooksFilter from '../MyBooks-components-example/MyBooksFilter/MyBooksFi
 
 import styles from './my-books-3-1.module.scss';
 
-class MyBooksLife extends Component {
+class MyBooksLifeСycle extends Component {
   state = {
     items: [],
     filter: '',
   };
+
+  componentDidMount() {
+    const items = JSON.parse(localStorage.getItem('my-books'));
+    console.log(localStorage.getItem('my-books'));
+    if (items?.length) {
+      ///items && items.length - ЗАПИС - ІДЕНТИЧНИЙ
+      this.setState({ items });
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log(prevProps);
+    console.log(prevState);
+    console.log(this.state);
+    console.log('componentDidUpdate');
+    const { items } = this.state;
+    if (prevState.length !== items.length) {
+      localStorage.setItem('my-books', JSON.stringify(items));
+    }
+  }
 
   removeBook = id => {
     this.setState(({ items }) => {
@@ -76,6 +96,7 @@ class MyBooksLife extends Component {
   }
 
   render() {
+    console.log('Render');
     const { addBook, removeBook, handleFilter } = this;
     const items = this.getFilteredBooks();
     const isBooks = Boolean(items.length);
@@ -99,4 +120,4 @@ class MyBooksLife extends Component {
   }
 }
 
-export default MyBooksLife;
+export default MyBooksLifeСycle;
