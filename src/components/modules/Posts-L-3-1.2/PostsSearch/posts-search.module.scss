@@ -1,0 +1,19 @@
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  cursor: pointer;
+}
+
+.item {
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 0 10px;
+  //   background-color: grey;
+  cursor: pointer;
+}
+.errorMessage {
+  color: deeppink;
+  font-size: large;
+}

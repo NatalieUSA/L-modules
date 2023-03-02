@@ -1,0 +1,40 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //   background-color: hsl(328, 100%, 54%, 90%);
+  z-index: 999;
+}
+
+.modal {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  min-height: 300px;
+  min-width: 250px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  color: deeppink;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: grey;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+img {
+  object-fit: cover;
+  //   opacity: 0.75;
+  width: 100%;
+}

@@ -36,9 +36,9 @@ export class Posts extends Component {
 
     return (
       <>
-        {/* {error && (
+        {error && (
           <p>...Error ...Error ... somethig went wrong ... try later</p>
-        )} */}
+        )}
         {loading && (
           <Dna
             visible={true}

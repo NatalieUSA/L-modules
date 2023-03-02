@@ -1,0 +1,25 @@
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.item {
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  padding: 0 10px;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+.item:hover {
+  background-color: rgb(241, 241, 241);
+  border: none;
+  border: 1px solid deeppink;
+}
+.p {
+  color: grey;
+}
+.p:hover {
+  color: deeppink;
+}

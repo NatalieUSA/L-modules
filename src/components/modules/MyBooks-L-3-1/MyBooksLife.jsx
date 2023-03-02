@@ -15,7 +15,7 @@ class MyBooksLifeСycle extends Component {
 
   componentDidMount() {
     const items = JSON.parse(localStorage.getItem('my-books'));
-    console.log(localStorage.getItem('my-books'));
+    // console.log(localStorage.getItem('my-books'));
     if (items?.length) {
       ///items && items.length - ЗАПИС - ІДЕНТИЧНИЙ
       this.setState({ items });
@@ -23,10 +23,10 @@ class MyBooksLifeСycle extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(prevProps);
-    console.log(prevState);
-    console.log(this.state);
-    console.log('componentDidUpdate');
+    // console.log(prevProps);
+    // console.log(prevState);
+    // console.log(this.state);
+    // console.log('componentDidUpdate');
     const { items } = this.state;
     if (prevState.length !== items.length) {
       localStorage.setItem('my-books', JSON.stringify(items));
@@ -96,7 +96,7 @@ class MyBooksLifeСycle extends Component {
   }
 
   render() {
-    console.log('Render');
+    // console.log('Render');
     const { addBook, removeBook, handleFilter } = this;
     const items = this.getFilteredBooks();
     const isBooks = Boolean(items.length);

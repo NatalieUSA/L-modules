@@ -6,8 +6,8 @@ import ColorPicker from './R-m2/ColorPicker/ColorPicker';
 import MyBooksLifeСycle from './modules/MyBooks-L-3-1/MyBooksLife';
 
 import MyBooksComponent from './modules/MyBooks-components-example/MyBooksComponents';
-import { Posts } from './modules/Posts-L-3-2/Posts';
-
+import { Posts } from './modules/Posts-L-3-1.2/Posts/Posts';
+import { PostsSearch } from './modules/Posts-L-3-1.2/PostsSearch/PostsSearch';
 const colorPickerOptions = [
   { label: 'red', color: '#ff2803' },
   { label: 'green', color: '#10ec18' },
@@ -20,8 +20,14 @@ const colorPickerOptions = [
 export const App = () => {
   return (
     <div className="App">
-      <LessonsTitle>Lyamzin.3.2. Posts</LessonsTitle>
-      <Posts />
+      <LessonsTitle>
+        Lyamzin.3-2. Posts-searhForm.
+        lesson-7-lifecycle-methods-AJAX-modal-portal
+      </LessonsTitle>
+      <PostsSearch />
+      <LessonsTitle>Lyamzin.3-1.2. Posts</LessonsTitle>
+      {/* <Posts /> */}
+
       <LessonsTitle>Lyamzin.3.1. Lifecycle</LessonsTitle>
       <MyBooksLifeСycle />
       <LessonsTitle>Lyamzin. Modul 2.3 form</LessonsTitle>
